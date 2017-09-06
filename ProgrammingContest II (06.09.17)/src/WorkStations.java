@@ -14,8 +14,8 @@ public class WorkStations {
 		int[] a = new int[n];
 		int[] s = new int[n];
 		for(int i = 0; i < n; i++) {
-			a = reader.nextInt();
-			s = reader.nextInt();
+			a[i] = reader.nextInt();
+			s[i] = reader.nextInt();
 		}
 		Arrays.sort(a);
 		Arrays.sort(s);
