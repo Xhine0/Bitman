@@ -9,20 +9,11 @@ public class WorkStations {
 		Scanner reader = new Scanner(System.in);
 		
 		int n = reader.nextInt();
-		int m = reader.nextInt();
+		int p = reader.nextInt();
+		int q = reader.nextInt();
 		
-		int[] a = new int[n];
-		int[] s = new int[n];
-		for(int i = 0; i < n; i++) {
-			a = reader.nextInt();
-			s = reader.nextInt();
-		}
-		Arrays.sort(a);
-		Arrays.sort(s);
-		
-		for(int i = 0; i < n; i++) {
-			
-		}
+		boolean state = ((p+q) % (n*2)) <= n;
+		System.out.println(state ? "paul" : "opponent");
 	}
 
 }
