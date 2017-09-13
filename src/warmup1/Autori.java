@@ -1,3 +1,5 @@
+package warmup1;
+
 import java.util.Scanner;
 
 public class Autori {

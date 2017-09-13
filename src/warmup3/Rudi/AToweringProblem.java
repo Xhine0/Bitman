@@ -1,4 +1,4 @@
-package comp3;
+package warmup3.Rudi;
 
 import java.util.Arrays;
 import java.util.Scanner;

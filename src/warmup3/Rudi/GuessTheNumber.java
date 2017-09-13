@@ -1,8 +1,8 @@
-package comp3;
+package warmup3.Rudi;
 
 import java.util.Scanner;
 
-public class GuessTheNumber2 {
+public class GuessTheNumber {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -18,11 +18,9 @@ public class GuessTheNumber2 {
             switch (input) {
                 case "lower":
                     max = guess-1;
-                    guess = (int)Math.floor((min+max)/2);
                     break;
                 case "higher":
                     min = guess+1;
-                    guess = (int)Math.ceil((min+max)/2);
                     break;
                 case "correct":
                     System.exit(0);

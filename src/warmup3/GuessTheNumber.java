@@ -1,4 +1,4 @@
-package comp3;
+package warmup3;
 
 import java.util.Scanner;
 import java.util.Random;
