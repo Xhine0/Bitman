@@ -28,7 +28,15 @@ public class Cudoviste {
         }
     }
 
-    public static int possibleSpaces(char[][] map, int carsSquashed) {
+    /**
+     * Calculate the number of possible parking
+     * spaces based on the map and how many
+     * cars are supposed to be crushed.
+     * @param map the map (2D-array)
+     * @param cars the number of cars to be squashed.
+     * @return the number of possible spaces.
+     */
+    public static int possibleSpaces(char[][] map, int cars) {
 
         int possibleSpaces = 0;
         for (int y = 0; y < map.length-1; y++) {
@@ -38,7 +46,7 @@ public class Cudoviste {
                 space[0][1] = map[y][x+1];
                 space[1][0] = map[y+1][x];
                 space[1][1] = map[y+1][x+1];
-                if (possibleSpace(space) == carsSquashed) {
+                if (possibleSpace(space) == cars) {
                     possibleSpaces++;
                 }
             }

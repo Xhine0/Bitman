@@ -12,9 +12,7 @@ public class GuessTheNumber2 {
         int guess = (min+max)/2;
 
         for (int i = 0; i < 10; i++) {
-
             System.out.println(guess);
-            System.out.flush();
             String input = scan.nextLine();
 
             switch (input) {

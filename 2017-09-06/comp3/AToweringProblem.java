@@ -27,12 +27,14 @@ public class AToweringProblem {
             for (int j = i+1; j < boxHeights.length; j++) {
                 for (int k = j+1; k < boxHeights.length; k++) {
 
+                    // The first tower consists of boxes with a combined height towerOneHeight.
                     if (boxHeights[i] + boxHeights[j] + boxHeights[k] == towerOneHeight) {
                         towerOneBoxes[0] = boxHeights[i];
                         towerOneBoxes[1] = boxHeights[j];
                         towerOneBoxes[2] = boxHeights[k];
                     }
 
+                    // The second tower consists of boxes with a combined height towerTwoHeight.
                     if (boxHeights[i] + boxHeights[j] + boxHeights[k] == towerTwoHeight) {
                         towerTwoBoxes[0] = boxHeights[i];
                         towerTwoBoxes[1] = boxHeights[j];
@@ -42,10 +44,12 @@ public class AToweringProblem {
             }
         }
 
+        // Print both arrays.
         printInOrder(towerOneBoxes);
         printInOrder(towerTwoBoxes);
     }
 
+    // Sort the array and print the elements.
     public static void printInOrder(int[] t1) {
         Arrays.sort(t1);
         t1 = reverse(t1);
@@ -54,6 +58,7 @@ public class AToweringProblem {
         }
     }
 
+    // Reverse an array.
     public static int[] reverse(int[] xs) {
         int[] newList = new int[xs.length];
 
